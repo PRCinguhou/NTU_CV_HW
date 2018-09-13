@@ -42,6 +42,7 @@ int main(int argc, const char * argv[]) {
     Mat const_img ;
     image.copyTo(const_img);
     for(int i = 0; i < image.rows ; i++){
+        // *3 是因為r,g,b
         for(int j = 0 ; j < image.cols*3 ; j++){
             const_img.at<uint8_t>(i,j)=128;
         }
@@ -69,7 +70,7 @@ int main(int argc, const char * argv[]) {
 //    Mat rotate_img = getRotationMatrix2D(pc, -45., 1);
 //    warpAffine(image, rot, rotate_img, image.size());
 //    imwrite("rot.jpg", rot);
-//    
+
     
     
     return 0;
