@@ -37,7 +37,6 @@ int main(int argc, const char * argv[]) {
     }
     imwrite("./neg.jpg", neg_img);
     
-    
     // 全部變128
     Mat const_img ;
     image.copyTo(const_img);
@@ -64,7 +63,9 @@ int main(int argc, const char * argv[]) {
     }
     imwrite("./thresh.jpg", thresh_img);
     
-//  rotate image / 或使用software
+    
+
+//  rotate image / 或使用software 轉45度
 //    Mat rot ;
 //    Point2f pc(image.cols/2., image.rows/2.);
 //    Mat rotate_img = getRotationMatrix2D(pc, -45., 1);

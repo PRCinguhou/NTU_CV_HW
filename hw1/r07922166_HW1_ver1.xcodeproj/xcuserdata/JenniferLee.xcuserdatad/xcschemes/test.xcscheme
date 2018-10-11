@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3CE0CDD2148A7F200EDF2F9"
-               BuildableName = "r07922166_HW0_ver1"
-               BlueprintName = "r07922166_HW0_ver1"
-               ReferencedContainer = "container:r07922166_HW0_ver1.xcodeproj">
+               BuildableName = "r07922166_HW1_ver1"
+               BlueprintName = "r07922166_HW1_ver1"
+               ReferencedContainer = "container:r07922166_HW1_ver1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3CE0CDD2148A7F200EDF2F9"
-            BuildableName = "r07922166_HW0_ver1"
-            BlueprintName = "r07922166_HW0_ver1"
-            ReferencedContainer = "container:r07922166_HW0_ver1.xcodeproj">
+            BuildableName = "r07922166_HW1_ver1"
+            BlueprintName = "r07922166_HW1_ver1"
+            ReferencedContainer = "container:r07922166_HW1_ver1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/JenniferLee/Documents/GitHub/NTU_CV_HW/hw0/r07922166_HW0_ver1"
+      customWorkingDirectory = "/Users/JenniferLee/Documents/GitHub/NTU_CV_HW/hw1/r07922166_HW1_ver1"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3CE0CDD2148A7F200EDF2F9"
-            BuildableName = "r07922166_HW0_ver1"
-            BlueprintName = "r07922166_HW0_ver1"
-            ReferencedContainer = "container:r07922166_HW0_ver1.xcodeproj">
+            BuildableName = "r07922166_HW1_ver1"
+            BlueprintName = "r07922166_HW1_ver1"
+            ReferencedContainer = "container:r07922166_HW1_ver1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3CE0CDD2148A7F200EDF2F9"
-            BuildableName = "r07922166_HW0_ver1"
-            BlueprintName = "r07922166_HW0_ver1"
-            ReferencedContainer = "container:r07922166_HW0_ver1.xcodeproj">
+            BuildableName = "r07922166_HW1_ver1"
+            BlueprintName = "r07922166_HW1_ver1"
+            ReferencedContainer = "container:r07922166_HW1_ver1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
