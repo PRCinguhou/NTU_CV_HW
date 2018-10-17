@@ -136,25 +136,21 @@ int main(int argc, const char * argv[]) {
     Mat erosionImage = erosion(thresh_img, kernel);
     imshow("erosion", erosionImage);
     waitKey(0);
-    imwrite("./erosion.jpg", erosionImage);
     
     // dilation
     Mat dilationImage = dilation(thresh_img, kernel);
     imshow("dilation", dilationImage);
     waitKey(0);
-    imwrite("./dilation.jpg", dilationImage);
     
     // opening
     Mat openingImage = dilation(grayScale(erosionImage), kernel);
     imshow("opening", openingImage);
     waitKey(0);
-    imwrite("./opening.jpg", openingImage);
-
+    
     // closing
     Mat closingImage = erosion(grayScale(dilationImage), kernel);
     imshow("closing", closingImage);
     waitKey(0);
-    imwrite("./closing.jpg", closingImage);
     
     
     //upper right-hand corner
@@ -165,31 +161,20 @@ int main(int argc, const char * argv[]) {
     erosion(erosion_by_J, J_kernel).copyTo(erosion_by_J);
     for(int i = 0 ; i < thresh_img.rows; i++){
         for(int j = 0 ; j < thresh_img.cols; j++){
-            if(thresh_img.at<uint8_t>(i,j)==1){
-                thresh_img.at<uint8_t>(i,j)=255;
+            if(thresh_img.at<uint8_t>(i,j)!=0){
+                thresh_img.at<uint8_t>(i,j)=0;
             }
             else{
-                thresh_img.at<uint8_t>(i,j)=0;
+                thresh_img.at<uint8_t>(i,j)=1;
             }
         }
     }
-    negImage(thresh_img).copyTo(erosion_by_K);
-    
-    imshow("erosionBy-J", erosion_by_J);
-    waitKey(0);
-    imwrite("./erosionBy-J.jpg", erosion_by_J);
-    
-    imshow("erosionBy-K", erosion_by_K);
-    waitKey(0);
-    imwrite("./erosionBy-K.jpg", erosion_by_K);
-    
+    thresh_img.copyTo(erosion_by_K);
     erosion(erosion_by_K, K_kernel).copyTo(erosion_by_K);
     grayScale(erosion_by_J).copyTo(erosion_by_J);
     grayScale(erosion_by_K).copyTo(erosion_by_K);
-    
     erosion_by_J.copyTo(result);
-    result.mul(erosion_by_K);
-    
+    result = result.mul(erosion_by_K);
     for(int i = 0; i < result.rows; i++){
         for(int j = 0 ; j < result.cols; j++){
             if(result.at<uint8_t>(i,j) == 1){
@@ -202,7 +187,6 @@ int main(int argc, const char * argv[]) {
     
     imshow("hit-and-miss", result);
     waitKey(0);
-    imwrite("./hit&miss.jpg", result);
-    
+    imwrite("./corner.jpg", result);
     return 0;
 }
