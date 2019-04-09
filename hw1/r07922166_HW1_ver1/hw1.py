@@ -184,3 +184,10 @@ for box in bounding_box:
 plt.imshow(finalImg)
 plt.show()
 
+hist = cv2.calcHist([img],[0],None,[256],[0,256])
+hist,bins = np.histogram(img.ravel(),256,[0,256])
+
+
+
+
+
